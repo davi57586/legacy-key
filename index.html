@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LEGACY - 0/1</title>
+<style>
+body{margin:0;background:#000;font-family:Arial;color:#fff;height:100vh;display:flex;justify-content:center;align-items:center;}
+.box{width:320px;max-width:92vw;background:rgba(20,20,40,0.92);border-radius:14px;padding:25px;text-align:center;}
+h1{color:#00ff9d;}
+button{width:100%;padding:12px;margin-top:10px;border:none;border-radius:10px;font-weight:bold;cursor:pointer;background:linear-gradient(90deg,#ff00ff,#00ffff);color:#000;}
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>0/1</h1>
+  <p>Verificação necessária</p>
+  <button onclick="go()">CONTINUAR</button>
+</div>
+<script>
+function go(){
+    localStorage.setItem("legacy_step","started");
+    window.location.href = "https://link-hub.net/1377269/eAgAbpYcM2Eo";
+}
+window.onload = () => {
+    if(localStorage.getItem("legacy_step") === "started"){
+        window.location.href = "login/index.html";
+    }
+};
+</script>
+</body>
+</html>
